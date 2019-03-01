@@ -1,0 +1,49 @@
+{
+    "name": "pragmarx/yaml",
+    "description": "Load your Laravel config files using yaml",
+    "keywords": [
+        "laravel",
+        "yaml",
+        "config"
+    ],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Antonio Carlos Ribeiro",
+            "email": "acr@antoniocarlosribeiro.com",
+            "role": "Creator & Designer"
+        }
+    ],
+    "require": {
+        "php": "^7.0",
+        "laravel/framework": ">=5.5.33",
+        "symfony/yaml": "^3.4|^4.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^6.4|^4.0",
+        "orchestra/testbench": "3.5|^3.6"
+    },
+    "autoload": {
+        "psr-4": {
+            "PragmaRX\\Yaml\\Package\\": "src/package",
+            "PragmaRX\\Yaml\\Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "component": "package",
+        "laravel": {
+            "providers": [
+                "PragmaRX\\Yaml\\Package\\ServiceProvider"
+            ],
+            "aliases": {
+                "Yaml": "PragmaRX\\Yaml\\Package\\Facade"
+            }
+        }
+    },
+    "scripts": {
+        "test": [
+            "@composer install",
+            "vendor/bin/phpunit"
+        ]
+    }
+}

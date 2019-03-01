@@ -1,0 +1,125 @@
+/* =================== Editor =================== */
+#editor {padding: 0px;margin: 0px}
+#editor .editor-tabs {list-style: none;margin: 0px;padding: 0px;background: #232323;display: block;float: left;width: 100%;border-bottom: solid 1px;height: 31px}
+#editor .editor-tabs li {display: inline-block;padding: 4px 10px;padding-right: 8px;padding-bottom: 6px;color: beige;background: #222;border-right: solid 1px #333;margin: 0px;cursor: pointer}
+#editor .editor-tabs li i.fa {font-size: 10px;margin-left: 3px;color: #555}
+#editor .editor-tabs li.active {background: #444}
+#editor .editor-tabs li.active i.fa {color: #999}
+#editor .editor-tabs li:hover {background: #333}
+#editor .editor-tabs li:hover i.fa {color: #999}
+#editor #ace-editor {display: block;border-radius: 0px;border: 0px;margin-top: 15px}
+#editor #ace-editor .ace_gutter {margin-top: 10px}
+#editor #ace-editor .ace_scroller {margin-top: 10px}
+
+/* =================== Visible Password =================== */
+.field-icon-lg {float: right;margin-right: 10px;margin-top: -28px;position: relative;z-index: 2;}
+.field-icon-password {float: right;margin-right: 10px;margin-top: -30px;position: relative;z-index: 2;}
+.field-icon-confirm {float: right;margin-right: 10px;margin-top: -20px;position: relative;z-index: 2;}
+
+/* Make inline editables take the full width of their parents */
+.editable-container.editable-inline,
+.editable-container.editable-inline .control-group.form-group,
+.editable-container.editable-inline .control-group.form-group .editable-input,
+.editable-container.editable-inline .control-group.form-group .editable-input textarea,
+.editable-container.editable-inline .control-group.form-group .editable-input select,
+.editable-container.editable-inline .control-group.form-group .editable-input input:not([type=radio]):not([type=checkbox]):not([type=submit])
+{
+  width: 100%;
+  display: inline-block;
+}
+
+.pointer {cursor: pointer}
+
+.stylish-input-group{
+    background: white !important;
+}
+.stylish-input-group .form-control{
+	border-right:0;
+	box-shadow:0 0 0;
+	border-color:#ccc;
+}
+.stylish-input-group button{
+    border:0;
+    background:transparent;
+}
+
+.btn-datatables-right {
+    float: right;
+    left:10px;
+}
+
+.dataTables_length {
+    padding-bottom: 15px;
+}
+
+input[readonly] {
+    background-color: white !important;
+    cursor: pointer;
+}
+
+.form-check-inline.no_indent,
+.form-check-inline.no_indent+.checkbox-inline.no_indent {
+  margin-left: 0;
+  margin-right: 10px;
+}
+.form-check-inline.no_indent:last-child {
+  margin-right: 0;
+}
+
+.dz-image img{width: 100%;height: 100%;}
+* {
+    box-sizing: border-box;
+   }
+   *:before,
+   *:after {
+    box-sizing: border-box;
+   }
+
+.page-container {
+  min-height: 100vh; /* will cover the 100% of viewport */
+ overflow: hidden;
+ display: block;
+ position: relative;
+ padding-bottom: 100px; /* height of your footer */
+}
+
+.footer {
+  position: absolute;
+  bottom: -5px;
+  width: 82%;
+}
+
+legend.legendStyle a {
+  color: inherit;
+}
+legend.legendStyle {
+  width: auto;
+	border-bottom:0px;
+	padding-left: 5px;
+	padding-right: 5px;
+  font-size: 150%;
+	color: #888888;
+	background-color: transparent;
+	font-weight: bold;
+}
+fieldset.fsStyle {
+	font-weight: normal;
+	border: 1px solid #999999;
+	padding: 4px;
+	margin: 5px;
+  border: 1px solid #ddd !important;
+	margin: 0;
+	xmin-width: 0;
+	padding: 10px;
+	position: relative;
+	border-radius:4px;
+	background-color:#fff;
+	padding-left:10px!important;
+	margin-bottom: 20px;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none; 
+  margin: 0;
+}
